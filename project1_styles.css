@@ -255,19 +255,28 @@ body {
 #about {
     background: url('diagoona-bg-2.jpg') no-repeat center center / cover;
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
  /* Content for About Section - Positioned to the Right */
  .about-content{
-    position: absolute;
+    margin-left: auto;
+    margin-right: 1.2em;
     top: 50%;
     left: 920px;
     right: 50px;
-    transform: translateY(-50%);
+    transform: translateY(-50% -50%);
     text-align: left;
     color: white;
-    flex-wrap: wrap;
+    width: 40%;
+    height: 50%;
     flex-direction: column;
+    box-sizing: border-box;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: right;
 }
 
 .about-content p {
@@ -307,22 +316,33 @@ body {
 #services {
     background: url('diagoona-bg-1.jpg') no-repeat center center / cover;
     display: flex;
-    flex-direction: column;
     position: relative;
     gap: 20px;/* Space between service items */
     align-items: flex-end; /* Align content to the right */
     padding-right: 50px; /* Add padding to the right side */
     flex-wrap: wrap;
     flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
  /* Content for Services Section - Positioned to the Right */
  .services-content{
-    position: relative;
     top: 50%;
     transform: translateY(-50%);
     text-align: left;
     color: white;
+    margin-left: auto;
+    margin-right: 1.2em;
+    text-align: left;
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: right;
 }
 
 .services-content p {
@@ -349,6 +369,11 @@ body {
     padding: 20px;
     border-radius: 8px; /* Optional: Rounded corners for the image */
     object-fit: cover; /* Ensure image scales proportionally */
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: right;
 }
 
 .service-item div {
@@ -389,20 +414,31 @@ body {
 #contact {
     background: url('diagoona-bg-3.jpg') no-repeat center center / cover;
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 /* Content for Contact Section - Positioned to the Right */
 .contact-content{
-    position: absolute;
     top: 50%;
     left: 920px;
     right: 50px;
-    transform: translateY(-50%);
+    transform: translateY(-50% -50%);
     text-align: left;
     color: white;
-    flex-wrap: wrap;
     flex-direction: column;
+    box-sizing: border-box;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 40%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: 1.2em;
+}
+
 }
 
 .contact-content-txtviews{
@@ -410,8 +446,11 @@ body {
     padding: 20px;
     border-radius: 8px;
     max-width: 400px;
+    width: 40%;
+    height: 50%;
+    box-sizing: border-box;
+    flex: none;
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 15px;
